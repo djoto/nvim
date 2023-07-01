@@ -1,0 +1,9 @@
+[submodule "pack/plugins/opt/vim-github-dark"]
+	path = pack/plugins/opt/vim-github-dark
+	url = https://github.com/djoto/vim-github-dark
+[submodule "pack/plugins/start/auto-pairs"]
+	path = pack/plugins/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+[submodule "pack/plugins/start/ale"]
+	path = pack/plugins/start/ale
+	url = https://github.com/dense-analysis/ale
