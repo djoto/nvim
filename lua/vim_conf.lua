@@ -1,5 +1,6 @@
+vim.cmd([[
+
 packloadall
-" packadd YouCompleteMe
 packadd vim-github-dark
 
 " Disable compatibility with vi which can cause unexpected issues.
@@ -22,17 +23,11 @@ syntax on
 colorscheme ghdark
 let g:gh_color = "soft"
 
-
 " Add numbers to each line on the left-hand side.
 set number
-" Set line numbers fg and bg colors:
-" highlight LineNr ctermfg=white ctermbg=234
 
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
-" almost black background for cursos line
-" hi CursorLine cterm=NONE ctermbg=234 ctermfg=NONE
-
 
 " Netrw file explorer configuration:
 let g:netrw_banner = 0
@@ -44,7 +39,6 @@ augroup ProjectDrawer
   autocmd!
   autocmd VimEnter * :Vexplore
 augroup END
-
 
 " Asynchronous Lint Engine: https://github.com/dense-analysis/ale
 let g:ale_linters = {'python' : ['flake8']}
@@ -60,11 +54,4 @@ let g:ale_python_flake8_options = '--max-line-length=100 --extend-ignore=B015'
 let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}  " , 'python': ['autopep8', 'autoflake']}
 let g:ale_fix_on_save = 1
 
-
-" YouCompleteMe configuration:
-" YCM will auto-close the 'preview' window after the user leaves insert mode:
-" let g:ycm_autoclose_preview_window_after_insertion = 1
-" YCM will auto-close the 'preview' window after the user accepts the offered completion string:
-" let g:ycm_autoclose_preview_window_after_completion = 1
-
-" let g:python3_host_prog = '/usr/bin/python3'
+]])
