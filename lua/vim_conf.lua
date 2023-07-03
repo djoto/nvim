@@ -2,6 +2,8 @@ vim.cmd([[
 
 packloadall
 packadd vim-github-dark
+packadd coc.nvim
+packadd ale
 
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
