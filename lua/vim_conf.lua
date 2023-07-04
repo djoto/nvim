@@ -4,6 +4,8 @@ packloadall
 packadd vim-github-dark
 packadd coc.nvim
 packadd ale
+" packadd L9 " must be added before vim-autocomplpop
+" packadd vim-autocomplpop
 
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible

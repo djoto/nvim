@@ -10,3 +10,9 @@
 [submodule "pack/plugins/opt/coc.nvim"]
 	path = pack/plugins/opt/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+[submodule "pack/plugins/opt/L9"]
+	path = pack/plugins/opt/L9
+	url = https://github.com/vim-scripts/L9.git
+[submodule "pack/plugins/opt/vim-autocomplpop"]
+	path = pack/plugins/opt/vim-autocomplpop
+	url = https://github.com/othree/vim-autocomplpop.git
