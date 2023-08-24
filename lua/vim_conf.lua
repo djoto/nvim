@@ -7,6 +7,10 @@ packadd ale
 " packadd L9 " must be added before vim-autocomplpop
 " packadd vim-autocomplpop
 
+" Configure ruler and statusline
+set ruler
+set statusline=%F%=%m[row\:\ %l/%L,\ column\:\ %v]
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
@@ -57,5 +61,13 @@ let g:ale_virtualtext_cursor = 'disabled'
 let g:ale_python_flake8_options = '--max-line-length=100 --extend-ignore=B015'
 let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}  " , 'python': ['autopep8', 'autoflake']}
 let g:ale_fix_on_save = 1
+
+" For Python comment/uncomment
+vnoremap <silent> <C-k> :s/^/# /<cr>:noh<cr>
+vnoremap <silent> <C-u> :s/^# //<cr>:noh<cr>
+
+" Terminal configuration
+nnoremap <C-t> :sp<bar>term<cr><c-w>J:resize10<cr>
+tnoremap <Esc> <C-\><C-n>
 
 ]])
