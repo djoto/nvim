@@ -4,6 +4,7 @@ packloadall
 packadd vim-github-dark
 packadd coc.nvim
 packadd ale
+packadd vimtex
 " packadd L9 " must be added before vim-autocomplpop
 " packadd vim-autocomplpop
 
@@ -69,5 +70,8 @@ vnoremap <silent> <C-u> :s/^# //<cr>:noh<cr>
 " Terminal configuration
 nnoremap <C-t> :sp<bar>term<cr><c-w>J:resize10<cr>
 tnoremap <Esc> <C-\><C-n>
+
+" vimtex configuration
+" https://github.com/lervag/vimtex#configuration
 
 ]])

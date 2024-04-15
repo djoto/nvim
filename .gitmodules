@@ -16,3 +16,6 @@
 [submodule "pack/plugins/opt/vim-autocomplpop"]
 	path = pack/plugins/opt/vim-autocomplpop
 	url = https://github.com/othree/vim-autocomplpop.git
+[submodule "pack/plugins/opt/vimtex"]
+	path = pack/plugins/opt/vimtex
+	url = https://github.com/lervag/vimtex.git
